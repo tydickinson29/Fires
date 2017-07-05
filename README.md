@@ -72,6 +72,9 @@ COOP Rainfall takes daily rainfall accumulations from COOP stations and outputs 
 stations were selected in an attempt to fully cover all counties in the CWA as well as have mutliple in metropolitan areas such 
 as Austin and San Antonio.
 
+A script that reads in all .csv files containing local maxima from COOP stations and outputs the global maximum from these values
+as well as the station this maximum was recorded at. This script is almost complete.
+
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
 Authority. 
 They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their website: 
