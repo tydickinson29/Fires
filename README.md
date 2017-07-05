@@ -11,7 +11,11 @@ Summer: June, July, August
 
 Fall: September, October, November
 
-Storm reports were gathered using the National Centers for Environmental Informations's (NCEI) Storm Events Database.
+Storm reports (except Fire Weather were gathered using the National Centers for Environmental Informations's (NCEI) 
+Storm Events Database:
+
+https://www.ncdc.noaa.gov/stormevents/
+
 
 # Severe Weather
 
@@ -39,6 +43,8 @@ gages went above moderate flood stage.
 In regards to river gages, 54 were selected on major rivers and creek throughout the CWA. 
 
 # Fire Weather
+
+Report dataset was obtained from the Texas Forestry Service. 
 
 Indicators: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned, damages 
 (adjusted to 2010), number of fires, number of days with a fire. 
