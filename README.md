@@ -11,7 +11,7 @@ Summer: June, July, August
 
 Fall: September, October, November
 
-Storm reports (except Fire Weather were gathered using the National Centers for Environmental Informations's (NCEI) 
+Storm reports (except Fire Weather were gathered using the National Centers for Environmental Information's (NCEI) 
 Storm Events Database: https://www.ncdc.noaa.gov/stormevents/
 
 
