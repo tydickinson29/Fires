@@ -9,11 +9,17 @@ Fall: September, October, November
 
 # Severe Weather
 
+Code is still in progress.
+
 Impacts: Total number of reports, number of report days, damages (adjusted to 2010), maximum hail size, maximum wind magnitude (non-tornadic), maximum tornado width, total tornado path length, total rainfall, fatalities, and injuries. 
+
+A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
 # Fires
 
 Impacts: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned, damages (adjusted to 2010), number of fires, number of days with a fire. 
+
+In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
 # Winter Weather 
 
