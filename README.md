@@ -17,4 +17,17 @@ Impacts: Combined fire service and civilian fatalities, combined fire service an
 
 # Winter Weather 
 
+Code is currently still in process, but the beginning is uploaded. 
+
+Seasons may be changed to October, November, December and January, February, March. 
+
 # Rainfalls
+
+There are multiple rainfall scripts uploaded. COOP Rainfall takes daily rainfall accumulations from COOP stations and outputs maximum one day and two day rainfall. 
+
+LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River Authority. 
+They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their website: 
+
+http://www.twdb.texas.gov/surfacewater/conditions/evaporation/
+
+We selected quadrangles that were over two-thirds covered by area in our county warning area (CWA). Output is rainfall estimations for our CWA area.
