@@ -70,10 +70,10 @@ There are multiple rainfall scripts uploaded.
 
 COOP Rainfall takes daily rainfall accumulations from COOP stations and outputs maximum one day and two day rainfall. 52 COOP 
 stations were selected in an attempt to fully cover all counties in the CWA as well as have mutliple in metropolitan areas such 
-as Austin and San Antonio.
+as Austin and San Antonio. (Named COOP Rainfall Totals)
 
 A script that reads in all .csv files containing local maxima from COOP stations and outputs the global maximum from these values
-as well as the station this maximum was recorded at. This script is almost complete.
+as well as the station this maximum was recorded at. This script is almost complete. (Named Maximum Rainfall)
 
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
 Authority. 
@@ -82,13 +82,12 @@ They have collected rainfall data since 1940 and have monthly tables for rainfal
 http://www.twdb.texas.gov/surfacewater/conditions/evaporation/
 
 We selected quadrangles that were over two-thirds covered by area in our county warning area (CWA). Output is rainfall estimations 
-for our CWA area.
+for our CWA area. (Named LCRA Rainfall)
 
 Another possible method of estimating total rainfall is through use of climate divisions (CDs). Each state is divided into climate
-divisions
-and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's Local Climate 
-Analysis Tool (LCAT). A fraction of a CWA can be found inside of each CD then multiplied by the CD's rainfall and summed for all
-CDs of interest. 
+divisions and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's Local
+Climate Analysis Tool (LCAT). A fraction of a CWA can be found inside of each CD then multiplied by the CD's rainfall and summed 
+for all CDs of interest. 
 
 # Snowfall
 
