@@ -17,7 +17,7 @@ Storm Events Database: https://www.ncdc.noaa.gov/stormevents/
 
 # Severe Weather
 
-Code is still in progress.
+Code almost done, but not completely. Report Days is the only remaining indicator needed.
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
