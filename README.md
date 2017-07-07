@@ -11,7 +11,7 @@ Summer: June, July, August
 
 Fall: September, October, November
 
-Storm reports (except Fire Weather were gathered using the National Centers for Environmental Information's (NCEI) 
+Storm reports (except Fire Weather) were gathered using the National Centers for Environmental Information's (NCEI) 
 Storm Events Database: https://www.ncdc.noaa.gov/stormevents/
 
 At this point, not all code is commented to explain my thoughts, but I intend to do so.
@@ -95,3 +95,6 @@ for all CDs of interest.
 COOP Stations also record snowfall and snow depth, which could be useful for winter weather. However, snowfall measurements should 
 be  made sure not to be related to severe weather days, as melted hail accumulations is recorded as snowfall (not sure if COOP 
 stations do this but WFO's do). 
+
+
+# Tropical Weather
