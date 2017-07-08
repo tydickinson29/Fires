@@ -90,6 +90,12 @@ divisions and total monthly and seasonal rainfall is calculated for each climate
 Climate Analysis Tool (LCAT). A fraction of a CWA can be found inside of each CD then multiplied by the CD's rainfall and summed 
 for all CDs of interest. 
 
+
+LCRA vs. CD is a script that I wrote before doing a Wilcoxon Signed Ranks Test to determine if there is a statistically significant
+difference between gathering rainfall accumulations using LCRA 1 degree latitude by 1 degree longitude quadrangles or by using 
+the Climate Divisions.This test was done at the 95% significance level, was a two-tailed test, and used a large sample
+approximation.
+
 # Snowfall
 
 COOP Stations also record snowfall and snow depth, which could be useful for winter weather. However, snowfall measurements should 
