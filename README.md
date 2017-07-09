@@ -52,9 +52,9 @@ In our dataset times were not given for the fire reports, so number of days with
 
 # Winter Weather 
 
-Code is currently still in process, but the beginning is uploaded. 
-
 Seasons may be changed to October, November, December and January, February, March. 
+
+Code is written with original seasons in mind but can easily be modified. 
 
 Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/Wind Chill, Frost/Freeze, Heavy Snow, 
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
