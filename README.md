@@ -1,5 +1,7 @@
 This repository is a series of Jupyter notebooks that makes great use of the Pandas module to import .csv files containing past
-storm/fire reports, rainfall, etc and outputs new .csv containing various data described below.
+storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. It should be noted that parts of
+the scripts written here can be written in shorter, more efficient ways, most likely. But, the data that was output was the data
+we were needing, so the scripts did the job.
 
 At NWS Austin/San Antonio Weather Forecast Office we defined our seasons to be as follows:
 
@@ -14,22 +16,19 @@ Fall: September, October, November
 Storm reports (except Fire Weather) were gathered using the National Centers for Environmental Information's (NCEI) 
 Storm Events Database: https://www.ncdc.noaa.gov/stormevents/
 
-At this point, not all code is commented to explain my thoughts, but I intend to do so.
+A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
+
 
 # Severe Weather
-
-Code almost done, but not completely. Report Days is the only remaining indicator needed.
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
 Indicators: Total number of reports, number of report days, damages (adjusted to 2010), maximum hail size, maximum wind magnitude 
 (non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), fatalities, and injuries. 
 
-A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
+
 
 # River/ Flash Flooding
-
-Code is still in progress.
 
 Selections in NCEI Storm Data: Flash Flood, Flood
 
@@ -41,6 +40,10 @@ gages went above moderate flood stage.
 
 In regards to river gages, 54 were selected on major rivers and creek throughout the CWA. 
 
+The main flooding script will output: reports, report days, fatalities, injuries, and damages. The rainfall data is discussed below
+and the number of times river gages went above moderate was gathered by hand through AWIPS.
+
+
 # Fire Weather
 
 Report dataset was obtained from the Texas Forestry Service. 
@@ -49,6 +52,7 @@ Indicators: Combined fire service and civilian fatalities, combined fire service
 (adjusted to 2010), number of fires, number of days with a fire. 
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
+
 
 # Winter Weather 
 
@@ -64,6 +68,7 @@ with a report, fatalities, injuries, damages (adjusted to 2010), total snowfall,
 magnitude. 
 
 Ice accumulations may also be useful indicators, if those measurements are available. 
+
 
 # Rainfalls
 
