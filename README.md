@@ -140,10 +140,8 @@ lines of code I utilized very often. Pandas documentation is also very accessibl
 
 ## Reading in a .csv file
 ```
-
 Table = pd.read_csv('C:\Users\Ty Dickinson\Downloads\SevereStormsUpdated.csv', low_memory=False)
 Table['BEGIN_DATE'] = pd.to_datetime(Table.BEGIN_DATE)
-
 ```
 
 The first line sets the .csv file from the specified path as a variable called Table. By doing this, you can easily call
@@ -151,3 +149,57 @@ specific columns of data, like in line 2 where I access the column labeled BEGIN
 This second line converts that whole column from the default datatype object to a Pandas datatype called datetime. This is an
 amazing function and allows dates to easily be analyzed later. This conversion is very powerful as Pandas can automatically 
 recognize the format of the date (and time, if it is in the same column) regardless if it uses slashes or dashes. 
+
+## Separating the Entire Table into Seasons
+```
+df = Table.set_index(['BEGIN_DATE'])
+Date1 = '12-01-1980'
+Date2 = '02-28-1981'
+Date1 = pd.to_datetime(Date1)
+Date2 = pd.to_datetime(Date2)
+x = df.loc[Date1:Date2]
+```
+
+By default, when tabular data is read into the program, it in indexed from 0 to n-1, where n is the number of rows in the original
+file. The first line above sets the index to instead be the BEGIN_DATE column. This allows me to use the .loc function. Dates 1 
+and 2 are defined and converted to a datetime format to be used in the .loc. The last line sets the variable x to be the portion
+of the file that is between those two dates (both dates are included). 
+
+## Running the Script Through Seasons for Several Years
+```
+WinterCount = 0
+while WinterCount <= 30:
+    x = df.loc[Date1:Date2]
+    if Date2.is_leap_year:
+        Date2 = Date2 - pd.DateOffset(days=1)
+    Date1 = Date1 + pd.DateOffset(years=1)
+    Date2 = Date2 + pd.DateOffset(years=1)
+    if Date2.is_leap_year:
+        Date2 = Date2 + pd.DateOffset(days=1)
+    WinterCount = WinterCount + 1
+```
+
+The While statement is set while WinterCount is less than or equal to 30, for all the winter seasons of interest in our 
+time period. 
+pd.DateOffset is used in lines 6 and 7 to add one year to Dates 1 and 2 so that the next time the while statement runs, 
+the boundaries are Dec. 1981 and Feb. 1982 instead of 1980 and 1981, respectively. 
+Pandas has a very helpful function called is_leap_year that looks at the year of a date and will return True or False if the
+year is a leap year or is not a leap year. Line 8 says that if Date 2 is a leap year (so, if True was returned) then to 
+add 1 day (line9) so that Feb. 29 is not missed. Lines 4 and 5 do the same but after all the calculations are made based on
+the data in the file so that adding a year to Date 2 does not return an error (cannot have a Feb. 29 in a non-leap year).
+
+## Creating a Pandas Dataframe and Exporting to a .csv 
+```
+df1 = pd.DataFrame({'Winter Reports': WinterReports})
+df2 = pd.DataFrame({'Spring Reports': SpringReports})
+df3 = pd.DataFrame({'Summer Reports': SummerReports})
+df4 = pd.DataFrame({'Fall Reports': FallReports})
+dftot = pd.concat([df1, df2, df3, df4], axis=1)
+dftot.to_csv('Severe Weather Impacts.csv')
+```
+
+A Pandas dataframe is a 2-Dimensional data structure. I like to think of them as parts of a spreadsheet. 
+The first four lines create dataframes based on lists created earlier in the script (WinterReports, Spring Reports, etc) and
+also give them a column header name in quotes ('Winter Reports'). pd.concat concatenates the dataframes together into columns
+(axis=1 concatenates them into columns; axis=0 would concatenate them into rows). 
+Finally, this large dataframe is then exported to a .csv that can be downloaded and is titles Severe Weather Impacts.csv
