@@ -14,7 +14,7 @@ Summer: June, July, August
 Fall: September, October, November
 
 Storm reports (except Fire Weather) were gathered using the National Centers for Environmental Information's (NCEI) 
-Storm Events [Database](https://www.ncdc.noaa.gov/stormevents/).
+[Storm Events Database](https://www.ncdc.noaa.gov/stormevents/).
 
 A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
@@ -85,8 +85,8 @@ as well as the station this maximum was recorded at. This script is almost compl
 
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
 Authority. 
-They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their [website]
-(http://www.twdb.texas.gov/surfacewater/conditions/evaporation/)
+They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their 
+[website](http://www.twdb.texas.gov/surfacewater/conditions/evaporation/)
 
 We selected quadrangles that were over two-thirds covered by area in our county warning area (CWA). Output is rainfall estimations 
 for our CWA area. (Named LCRA Rainfall)
