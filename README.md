@@ -139,12 +139,12 @@ format which can easily be converted to .xlsx for further analysis, such as stat
 lines of code I utilized very often. Pandas documentation is also very accessible and helpful through a simple Google search.
 
 ## Reading in a .csv file
-'''
+```
 
 Table = pd.read_csv('C:\Users\Ty Dickinson\Downloads\SevereStormsUpdated.csv', low_memory=False)
 Table['BEGIN_DATE'] = pd.to_datetime(Table.BEGIN_DATE)
 
-'''
+```
 
 The first line sets the .csv file from the specified path as a variable called Table. By doing this, you can easily call
 specific columns of data, like in line 2 where I access the column labeled BEGIN_DATE. 
