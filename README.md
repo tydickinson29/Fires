@@ -140,8 +140,10 @@ lines of code I utilized very often. Pandas documentation is also very accessibl
 
 ## Reading in a .csv file
 '''
+
 Table = pd.read_csv('C:\Users\Ty Dickinson\Downloads\SevereStormsUpdated.csv', low_memory=False)
 Table['BEGIN_DATE'] = pd.to_datetime(Table.BEGIN_DATE)
+
 '''
 
 The first line sets the .csv file from the specified path as a variable called Table. By doing this, you can easily call
