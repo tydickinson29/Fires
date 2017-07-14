@@ -94,7 +94,7 @@ as well as the station this maximum was recorded at. This script is almost compl
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
 Authority. 
 They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their 
-[website](http://www.twdb.texas.gov/surfacewater/conditions/evaporation/)
+[website](http://www.twdb.texas.gov/surfacewater/conditions/evaporation/).
 
 We selected quadrangles that were over two-thirds covered by area in our county warning area (CWA). Output is rainfall estimations 
 for our CWA area. (Named LCRA Rainfall)
@@ -155,7 +155,7 @@ We also used Cronbach's Alpha Tests on the ranks for each indicator to test for 
 ## Predictors Stuff
 
 We used the Oceanic Niño Index as a measure of ENSO. These values can be found at the 
-[Climate Prediction Center](http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ensoyears.shtml).
+[Climate Prediction Center's page on ONI](http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ensoyears.shtml).
 
 CPC Seasonal Outlooks were also utilized, and can be found [here](ftp://ftp.cpc.ncep.noaa.gov/cpcfcsts/archives/long_lead/data/).
 A station's list is available [here](http://old.wetterzentrale.de/klima/stnlst.html). Note that the CPC only uses official
