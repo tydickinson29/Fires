@@ -57,7 +57,8 @@ Indicators: Combined fire service and civilian fatalities, combined fire service
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
-Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed.
+Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed was
+removed.
 
 
 ## Winter Weather 
