@@ -130,6 +130,16 @@ be  made sure not to be related to severe weather days, as melted hail accumulat
 
 ## Tropical Weather
 
+## Statistics
+
+Statistics were used heavily in data analysis. Because we cannot assume a normal distribution fits our data well, we used
+a nonparametric approach. Nonparametric statistics rely on ranking the data, hence why the bottom ten ranks are classified as 
+below normal, the middle ten as near normal, and the top ten as above normal. 
+
+To ensure we could use LCRA rainfall over Climate Division rainfall, we used Wilcoxon Signed Rank Tests to test if there was
+statisically significant differences. 
+
+We also used Cronbach's Alpha Tests on the ranks for each indicator to test for internal consistency. 
 
 # Some Code Explanations
 
