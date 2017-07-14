@@ -92,23 +92,23 @@ We selected quadrangles that were over two-thirds covered by area in our county 
 for our CWA area. (Named LCRA Rainfall)
 
 Quadrangles used in calculation for our CWA:
--709
--710
--807
--808
--809
--810
--908
+- 709
+- 710
+- 807
+- 808
+- 809
+- 810
+- 908
 
 Quadrangles used elsewhere:
--606
--607
--706
--707
--708
--811
--910
--1010
+- 606
+- 607
+- 706
+- 707
+- 708
+- 811
+- 910
+- 1010
 
 Another possible method of estimating total rainfall is through use of climate divisions (CDs). Each state is divided into climate
 divisions and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's Local
