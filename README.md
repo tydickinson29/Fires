@@ -30,7 +30,7 @@ A report day is defined to be 12Z - 12Z as overnight events are frequent and sho
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
-Indicators: Total number of reports, number of report days, damages (adjusted to 2010), maximum hail size, maximum wind magnitude 
+Indicators: Total number of reports, number of report days, maximum hail size, maximum wind magnitude 
 (non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), fatalities, and injuries. 
 
 
@@ -41,7 +41,7 @@ Selections in NCEI Storm Data: Flash Flood, Flood
 
 Combining river flooding and flash flooding may not always be applicable to every WFO. 
 
-Indicators: Number of flash flood reports, number of days with a report, fatalities, injuries, damages (adjusted to 2010), total
+Indicators: Number of flash flood reports, number of days with a report, fatalities, injuries, total
 rainfall (discussed below), maximum one day rainfall and two day rainfall (also discussed below), and number of times river 
 gages went above moderate flood stage. 
 
@@ -55,8 +55,12 @@ and the number of times river gages went above moderate was gathered by hand thr
 
 Report dataset was obtained from the Texas Fire Marshal's Office. 
 
-Indicators: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned, damages 
-(adjusted to 2010), number of fires, number of days with a fire. 
+Indicators: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned,
+number of fires, number of days with a fire, rainfall, 3-month standardized precipitation index (SPI), 3-month average
+Palmer Z, and average maximum temperature.
+
+SPI, Palmer Z, and average maximum temperature were calculated through climate divisions, described more in-depth in the Rainfalls
+section. We used climate divisions six and seven.
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
@@ -74,10 +78,8 @@ Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
 
 Possible indicators: Number of total reports (large amount of possibilities in NCEI Storm Database seen above), number of days 
-with a report, fatalities, injuries, damages (adjusted to 2010), total snowfall, maximum one and two day snowfall, maximum wind
-magnitude. 
+with a report, fatalities, injuries, total snowfall, maximum one and two day snowfall, and maximum wind magnitude. 
 
-Ice accumulations may also be useful indicators, if those measurements are available. 
 
 
 ## Rainfalls
@@ -119,9 +121,9 @@ Quadrangles used elsewhere:
 - 1010
 
 Another possible method of estimating total rainfall is through use of climate divisions (CDs). Each state is divided into climate
-divisions and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's Local
-Climate Analysis Tool (LCAT). A fraction of a CWA can be found inside of each CD then multiplied by the CD's rainfall and summed 
-for all CDs of interest. 
+divisions and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's [Local
+Climate Analysis Tool (LCAT)](http://nws.weather.gov/lcat/). A fraction of a CWA can be found inside of each CD then multiplied 
+by the CD's rainfall and summed for all CDs of interest. 
 
 
 LCRA vs. CD is a script that I wrote before doing a Wilcoxon Signed Ranks Test to determine if there is a statistically significant
