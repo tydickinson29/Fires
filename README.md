@@ -124,8 +124,6 @@ approximation.
 # Snowfall
 
 COOP Stations also record snowfall and snow depth, which could be useful for winter weather. However, snowfall measurements should 
-be  made sure not to be related to severe weather days, as melted hail accumulations is recorded as snowfall (not sure if COOP 
-stations do this but WFO's do). 
-
+be  made sure not to be related to severe weather days, as melted hail accumulations is recorded as snowfall.
 
 # Tropical Weather
