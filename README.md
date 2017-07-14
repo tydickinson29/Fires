@@ -142,6 +142,11 @@ below normal, the middle ten as near normal, and the top ten as above normal.
 To ensure we could use LCRA rainfall over Climate Division rainfall, we used Wilcoxon Signed Rank Tests to test if there was
 statisically significant differences. 
 
+Each indicator was ranked with 1 being the highest value (lowest value for rainfall, SPI, and Palmer Z for fire weather)
+and n being the lowest value (highest value) where n is the number of years in the climatology. These ranks were then summed 
+across a single year and then this sum was ranked against all sums in the climatology to obtain a year's overall rank. This overall
+rank was 1 for the most impactful year and n for the least impactful year. 
+
 We also used Cronbach's Alpha Tests on the ranks for each indicator to test for internal consistency. 
 
 # Some Code Explanations
