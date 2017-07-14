@@ -1,5 +1,5 @@
-This repository is a series of Jupyter notebooks that makes great use of the Pandas module (
-found [here](http://pandas.pydata.org/) ) to import .csv files containing past
+This repository is a series of Jupyter notebooks that makes great use of the Pandas module
+(found [here](http://pandas.pydata.org/)) to import .csv files containing past
 storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. It should be noted that parts of
 the scripts written here can be written in shorter, more efficient ways, most likely. But, the data that was output was the data
 we were needing, so the scripts did the job. This readme is divided into two sections: Information regarding the research 
