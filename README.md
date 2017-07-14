@@ -14,7 +14,7 @@ Summer: June, July, August
 Fall: September, October, November
 
 Storm reports (except Fire Weather) were gathered using the National Centers for Environmental Information's (NCEI) 
-Storm Events Database: https://www.ncdc.noaa.gov/stormevents/
+Storm Events [Database](https://www.ncdc.noaa.gov/stormevents/).
 
 A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
@@ -46,12 +46,14 @@ and the number of times river gages went above moderate was gathered by hand thr
 
 # Fire Weather
 
-Report dataset was obtained from the Texas Forestry Service. 
+Report dataset was obtained from the Texas Fire Marshal's Office. 
 
 Indicators: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned, damages 
 (adjusted to 2010), number of fires, number of days with a fire. 
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
+
+Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed.
 
 
 # Winter Weather 
@@ -83,12 +85,30 @@ as well as the station this maximum was recorded at. This script is almost compl
 
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
 Authority. 
-They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their website: 
-
-http://www.twdb.texas.gov/surfacewater/conditions/evaporation/
+They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their [website]
+(http://www.twdb.texas.gov/surfacewater/conditions/evaporation/)
 
 We selected quadrangles that were over two-thirds covered by area in our county warning area (CWA). Output is rainfall estimations 
 for our CWA area. (Named LCRA Rainfall)
+
+Quadrangles used in calculation for our CWA:
+-709
+-710
+-807
+-808
+-809
+-810
+-908
+
+Quadrangles used elsewhere:
+-606
+-607
+-706
+-707
+-708
+-811
+-910
+-1010
 
 Another possible method of estimating total rainfall is through use of climate divisions (CDs). Each state is divided into climate
 divisions and total monthly and seasonal rainfall is calculated for each climate division in the National Weather Service's Local
