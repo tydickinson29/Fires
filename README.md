@@ -1,8 +1,10 @@
 This repository is a series of Jupyter notebooks that makes great use of the Pandas module to import .csv files containing past
 storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. It should be noted that parts of
 the scripts written here can be written in shorter, more efficient ways, most likely. But, the data that was output was the data
-we were needing, so the scripts did the job.
+we were needing, so the scripts did the job. This readme is divided into two sections: Information regarding the research 
+methods, various weather and climate events, etc. and a section describing a few essential lines of code utilized.
 
+# Background Info, Research Methods, and More
 At NWS Austin/San Antonio Weather Forecast Office we defined our seasons to be as follows:
 
 Winter: December, January, February
@@ -19,7 +21,7 @@ Storm reports (except Fire Weather) were gathered using the National Centers for
 A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
 
-# Severe Weather
+## Severe Weather
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
@@ -28,7 +30,7 @@ Indicators: Total number of reports, number of report days, damages (adjusted to
 
 
 
-# River/ Flash Flooding
+## River/ Flash Flooding
 
 Selections in NCEI Storm Data: Flash Flood, Flood
 
@@ -44,7 +46,7 @@ The main flooding script will output: reports, report days, fatalities, injuries
 and the number of times river gages went above moderate was gathered by hand through AWIPS.
 
 
-# Fire Weather
+## Fire Weather
 
 Report dataset was obtained from the Texas Fire Marshal's Office. 
 
@@ -56,7 +58,7 @@ In our dataset times were not given for the fire reports, so number of days with
 Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed.
 
 
-# Winter Weather 
+## Winter Weather 
 
 Seasons may be changed to October, November, December and January, February, March. 
 
@@ -72,7 +74,7 @@ magnitude.
 Ice accumulations may also be useful indicators, if those measurements are available. 
 
 
-# Rainfalls
+## Rainfalls
 
 There are multiple rainfall scripts uploaded. 
 
@@ -121,9 +123,29 @@ difference between gathering rainfall accumulations using LCRA 1 degree latitude
 the Climate Divisions.This test was done at the 95% significance level, was a two-tailed test, and used a large sample
 approximation.
 
-# Snowfall
+## Snowfall
 
 COOP Stations also record snowfall and snow depth, which could be useful for winter weather. However, snowfall measurements should 
 be  made sure not to be related to severe weather days, as melted hail accumulations is recorded as snowfall.
 
-# Tropical Weather
+## Tropical Weather
+
+
+# Some Code Explanations
+
+The Pandas module is a very powerful, yet easy to use, module for data analysis using tabular data. All of the data used in 
+this research was either in tabular format directly from a URL or imported in from an existing .csv file. Output is also in .csv
+format which can easily be converted to .xlsx for further analysis, such as statistics. Below I will briefly discuss a few 
+lines of code I utilized very often. Pandas documentation is also very accessible and helpful through a simple Google search.
+
+## Reading in a .csv file
+'''
+Table = pd.read_csv('C:\Users\Ty Dickinson\Downloads\SevereStormsUpdated.csv', low_memory=False)
+Table['BEGIN_DATE'] = pd.to_datetime(Table.BEGIN_DATE)
+'''
+
+The first line sets the .csv file from the specified path as a variable called Table. By doing this, you can easily call
+specific columns of data, like in line 2 where I access the column labeled BEGIN_DATE. 
+This second line converts that whole column from the default datatype object to a Pandas datatype called datetime. This is an
+amazing function and allows dates to easily be analyzed later. This conversion is very powerful as Pandas can automatically 
+recognize the format of the date (and time, if it is in the same column) regardless if it uses slashes or dashes. 
