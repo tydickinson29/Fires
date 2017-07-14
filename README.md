@@ -4,6 +4,8 @@ the scripts written here can be written in shorter, more efficient ways, most li
 we were needing, so the scripts did the job. This readme is divided into two sections: Information regarding the research 
 methods, various weather and climate events, etc. and a section describing a few essential lines of code utilized.
 
+Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
+
 # Background Info, Research Methods, and More
 At NWS Austin/San Antonio Weather Forecast Office we defined our seasons to be as follows:
 
@@ -212,4 +214,4 @@ A Pandas dataframe is a 2-Dimensional data structure. I like to think of them as
 The first four lines create dataframes based on lists created earlier in the script (WinterReports, Spring Reports, etc) and
 also give them a column header name in quotes ('Winter Reports'). pd.concat concatenates the dataframes together into columns
 (axis=1 concatenates them into columns; axis=0 would concatenate them into rows). 
-Finally, this large dataframe is then exported to a .csv that can be downloaded and is titles Severe Weather Impacts.csv
+Finally, this large dataframe is then exported to a .csv that can be downloaded and is titled Severe Weather Impacts.csv
