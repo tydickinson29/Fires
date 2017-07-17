@@ -43,7 +43,7 @@ break the tie (i.e. in years where the recorded fatality is kept, the number of 
 still exist, break them as one normally would by adding the ranks in question and dividing by the number of years in the tie.
 Here is a basic example: 
 ```
-**Adjusted Fatalities**         **Injuries**          **Rank**
+Adjusted Fatalities             Injuries                Rank
 2                               10                      1
 2                               5                       2
 1                               6                       3.5
