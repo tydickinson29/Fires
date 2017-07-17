@@ -25,16 +25,43 @@ Storm reports (except Fire Weather) were gathered using the National Centers for
 
 A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
-#### Combining Fatalities and Injuries into a Single Indicator
+#### *Combining Fatalities and Injuries into a Single Indicator*
+To better account for a large number of zeros for fatalities in individual years within a season, injuries and fatalities were 
+combined into a single indicator (called adjusted fatalities). After using the scripts to output the raw number of fatalities 
+and injuries, there are three (3) possibilities:
+1. A recorded fatality (whether there are associated injuries does not matter yet, but will later)
+2. No recorded fatalities, but there are injuries
+3. No recorded fatalities and injuries
 
+For possibility (1), the associated adjusted fatality is whatever number was recorded. For possibility (2), the associated
+adjusted fatality is the number of injuries divided by 100 (or 1000 if there are any instances of injuries > 1000). For 
+possibility (3), the associated fatality is 0. This can be done for each year in each season. 
 
+The next step in analysis is to rank all indicators. For adjusted fatalities, rank the adjusted fatalities from 1 to n, where n
+is the number of years in the climatology and where 1 is the highest value. For instances of ties, use injuries to attempt to 
+break the tie (i.e. in years where the recorded fatality is kept, the number of injuries is used to break the tie). If ties
+still exist, break them as one normally would by adding the ranks in question and dividing by the number of years in the tie.
+Here is a basic example: 
+```
+**Adjusted Fatalities**         **Injuries**          **Rank**
+2                               10                      1
+2                               5                       2
+1                               6                       3.5
+1                               6                       3.5
+1                               0                       5
+.06                             6                       6
+.05                             5                       7
+.04                             4                       8
+0                               0                       9.5
+0                               0                       9.5
+```
 
 ## Severe Weather
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
 Indicators: Total number of reports, number of report days, maximum hail size, maximum wind magnitude 
-(non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), fatalities, and injuries. 
+(non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), and adjusted fatalities. 
 
 
 
@@ -44,7 +71,7 @@ Selections in NCEI Storm Data: Flash Flood, Flood
 
 Combining river flooding and flash flooding may not always be applicable to every WFO. 
 
-Indicators: Number of flash flood reports, number of days with a report, fatalities, injuries, total
+Indicators: Number of flash flood reports, number of days with a report, adjusted fatalities, total
 rainfall (discussed below), maximum one day rainfall and two day rainfall (also discussed below), and number of times river 
 gages went above moderate flood stage. 
 
@@ -58,12 +85,8 @@ and the number of times river gages went above moderate was gathered by hand thr
 
 Report dataset was obtained from the Texas Fire Marshal's Office. 
 
-Indicators: Combined fire service and civilian fatalities, combined fire service and civilian injuries, acres burned,
-number of fires, number of days with a fire, rainfall, 3-month standardized precipitation index (SPI), 3-month average
-Palmer Z, and average maximum temperature.
-
-SPI, Palmer Z, and average maximum temperature were calculated through climate divisions, described more in-depth in the Rainfalls
-section. We used climate divisions six and seven.
+Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
+and civilian injuries, acres burned, number of fires, number of days with a fire, and total seasonal rainfall.
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
