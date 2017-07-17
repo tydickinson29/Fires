@@ -25,7 +25,7 @@ Storm reports (except Fire Weather) were gathered using the National Centers for
 
 A report day is defined to be 12Z - 12Z as overnight events are frequent and should be considered together. 
 
-### Combining Fatalities and Injuries into a Single Indicator
+#### Combining Fatalities and Injuries into a Single Indicator
 
 
 
