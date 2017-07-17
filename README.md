@@ -104,7 +104,7 @@ Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
 
 Possible indicators: Number of total reports (large amount of possibilities in NCEI Storm Database seen above), number of days 
-with a report, fatalities, injuries, total snowfall, maximum one and two day snowfall, and maximum wind magnitude. 
+with a report, adjusted fatalities, total snowfall, maximum one and two day snowfall, and maximum wind magnitude. 
 
 
 
