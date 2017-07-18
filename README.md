@@ -10,6 +10,19 @@ methods, various weather and climate events, etc. and a section describing a few
 Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
 
 # Background Info, Research Methods, and More
+
+#### Acryonyms 
+NWS: National Weather Service
+WFO: Weather Forecast Office
+CWA: County Warning Area
+AWIPS: Advanced Weather Interactive Processing System
+COOP: Cooperative Observer Network
+ASOS: Automated Surface Observing Station
+ENSO: El Niño Southern Oscillation 
+WMO: World Meteorological Organization
+CPC: Climate Prediction Center
+
+#### Setting the Stage
 At NWS Austin/San Antonio Weather Forecast Office we defined our seasons to be as follows:
 
 Winter: December, January, February
@@ -120,7 +133,7 @@ A script that reads in all .csv files containing local maxima from COOP stations
 as well as the station this maximum was recorded at. This script is almost complete. (Named Maximum Rainfall)
 
 LCRA Rainfall is used to estimated total rainfall throughout a given area using quadrangles created by the Lower Colorado River
-Authority. 
+Authority (LCRA). 
 They have collected rainfall data since 1940 and have monthly tables for rainfall and evaporation available at their 
 [website](http://www.twdb.texas.gov/surfacewater/conditions/evaporation/).
 
