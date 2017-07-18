@@ -18,6 +18,8 @@ WFO: Weather Forecast Office
 
 CWA: County Warning Area
 
+KBDI: Keetch-Bynum Drought Index
+
 AWIPS: Advanced Weather Interactive Processing System
 
 COOP: Cooperative Observer Network
@@ -107,7 +109,13 @@ and the number of times river gages went above moderate was gathered by hand thr
 Report dataset was obtained from the Texas Fire Marshal's Office. 
 
 Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
-and civilian injuries, acres burned, number of fires, number of days with a fire, and total seasonal rainfall.
+and civilian injuries), acres burned, number of fires, number of days with a fire, total seasonal rainfall, average CWA 
+high temperature, and KBDI "degree days".
+
+Modeled after heating/cooling degree days, KBDI degree days model the number of days above 550 KBDI. If a day in one county
+had a KBDI of 600 the the KBDI degree day would be 50; suppose the next day it was 620, then your total KBDI degree days
+would be 120 (50 from the first day, 70 from the second). It would is a cumulative total in each county, and then an areal 
+average is taken using each counties' area as a fraction of the CWA's area. 
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
@@ -194,7 +202,7 @@ below normal, the middle ten as near normal, and the top ten as above normal.
 To ensure we could use LCRA rainfall over Climate Division rainfall, we used Wilcoxon Signed Rank Tests to test if there was
 statisically significant differences. 
 
-Each indicator was ranked with 1 being the highest value (lowest value for rainfall, SPI, and Palmer Z for fire weather)
+Each indicator was ranked with 1 being the highest value (lowest value for rainfall for fire weather)
 and n being the lowest value (highest value) where n is the number of years in the climatology. These ranks were then summed 
 across a single year and then this sum was ranked against all sums in the climatology to obtain a year's overall rank. This overall
 rank was 1 for the most impactful year and n for the least impactful year. 
@@ -211,6 +219,9 @@ A station's list is available [here](http://old.wetterzentrale.de/klima/stnlst.h
 WMO stations. These stations have a station number whose seventh digit is 0 in the station link list. Stations that end in 
 something other than a 0 denote that they are near a WMO site and are other sites like ASOS or COOP. The stations used 
 for our CWA were San Antonio International Airport, Austin Mueller Municipal Airport, and Del Rio International Airport.
+
+In some cases, indicators in one season were used as a predictor for another. For example, total CWA rainfall in spring 
+is used as an indicator for spring but then also used as a predictor for summer when looking at fire weather.
 
 Spearman's Rank-Order Correlations were used to test strength of predictors with the ranks determined in the climatology.
 
