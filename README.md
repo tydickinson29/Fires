@@ -138,7 +138,8 @@ removed.
 
 Seasons may be changed to October, November, December and January, February, March. 
 
-Climatology: 1981-2010
+Climatology: 1981-2010. Storm reports output from NCEI's site are only 1996 and on. To go back to 1981, we went through the NCEI
+publications (found [here](https://www.ncdc.noaa.gov/IPS/sd/sd.html)) and manually added appropriate reports.
 
 For our CWA, all reports were considered as one large season (essentially November through March) since there is not a large 
 number of total reports. 
@@ -147,8 +148,10 @@ Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
 
 Possible indicators: Number of total reports (large amount of possibilities in NCEI Storm Database seen above), number of days 
-with a report, adjusted fatalities, total snowfall, maximum one and two day snowfall, and maximum wind magnitude. 
+with a report, adjusted fatalities, total snowfall, maximum one and two day snowfall.
 
+Snowfall may not always align with number of reports since (especially for this EWX's CWA) freezing rain/sleet/ice are
+common (relatively speaking, for winter weather) and can cause serious impacts.
 
 
 ## Rainfalls
