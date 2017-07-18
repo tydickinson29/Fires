@@ -11,7 +11,7 @@ Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov 
 
 # Background Info, Research Methods, and More
 
-#### Acryonyms 
+### Acryonyms 
 NWS: National Weather Service
 WFO: Weather Forecast Office
 CWA: County Warning Area
@@ -22,7 +22,7 @@ ENSO: El Niño Southern Oscillation
 WMO: World Meteorological Organization
 CPC: Climate Prediction Center
 
-#### Setting the Stage
+### Setting the Stage
 At NWS Austin/San Antonio Weather Forecast Office we defined our seasons to be as follows:
 
 Winter: December, January, February
