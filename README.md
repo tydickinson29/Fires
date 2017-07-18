@@ -83,6 +83,8 @@ Adjusted Fatalities             Injuries                Rank
 
 Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
+Climatology: 1981-2010
+
 Indicators: Total number of reports, number of report days, maximum hail size, maximum wind magnitude 
 (non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), and adjusted fatalities. 
 
@@ -91,6 +93,10 @@ Indicators: Total number of reports, number of report days, maximum hail size, m
 ## River/ Flash Flooding
 
 Selections in NCEI Storm Data: Flash Flood, Flood
+
+Climatology: 1981-2010. Storm reports output from NCEI's site are only 1996 and on. To go back to 1981, we went through the NCEI
+publications (found [here](https://www.ncdc.noaa.gov/IPS/sd/sd.html)) and manually added flash flood and flood reports. In addition,
+archived E3 and E5 reports filed by past hydrologists were examined to best include all past events as possible.
 
 Combining river flooding and flash flooding may not always be applicable to every WFO. 
 
@@ -107,6 +113,11 @@ and the number of times river gages went above moderate was gathered by hand thr
 ## Fire Weather
 
 Report dataset was obtained from the Texas Fire Marshal's Office. 
+
+Climatology: 2000-2014
+
+The dataset obtained went back to 1982, however there were no figures for acres burned from 1982-1999. Thus, we decided to
+use a 15-year climatology for now.
 
 Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
 and civilian injuries), acres burned, number of fires, number of days with a fire, total seasonal rainfall, average CWA 
@@ -127,7 +138,10 @@ removed.
 
 Seasons may be changed to October, November, December and January, February, March. 
 
-Code is written with original seasons in mind but can easily be modified. 
+Climatology: 1981-2010
+
+For our CWA, all reports were considered as one large season (essentially November through March) since there is not a large 
+number of total reports. 
 
 Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/Wind Chill, Frost/Freeze, Heavy Snow, 
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
