@@ -212,6 +212,8 @@ WMO stations. These stations have a station number whose seventh digit is 0 in t
 something other than a 0 denote that they are near a WMO site and are other sites like ASOS or COOP. The stations used 
 for our CWA were San Antonio International Airport, Austin Mueller Municipal Airport, and Del Rio International Airport.
 
+Spearman's Rank-Order Correlations were used to test strength of predictors with the ranks determined in the climatology.
+
 # Some Code Explanations
 
 The Pandas module is a very powerful, yet easy to use, module for data analysis using tabular data. All of the data used in 
