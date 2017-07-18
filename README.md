@@ -13,13 +13,21 @@ Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov 
 
 ### Acryonyms 
 NWS: National Weather Service
+
 WFO: Weather Forecast Office
+
 CWA: County Warning Area
+
 AWIPS: Advanced Weather Interactive Processing System
+
 COOP: Cooperative Observer Network
+
 ASOS: Automated Surface Observing Station
+
 ENSO: El Niño Southern Oscillation 
+
 WMO: World Meteorological Organization
+
 CPC: Climate Prediction Center
 
 ### Setting the Stage
