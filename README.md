@@ -121,14 +121,11 @@ use a 15-year climatology for now.
 
 Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
 and civilian injuries), acres burned, number of fires, number of days with a fire, total seasonal rainfall, average CWA 
-high temperature, and KBDI "degree days".
-
-Modeled after heating/cooling degree days, KBDI degree days model the number of days above 550 KBDI. If a day in one county
-had a KBDI of 600 the the KBDI degree day would be 50; suppose the next day it was 620, then your total KBDI degree days
-would be 120 (50 from the first day, 70 from the second). It would is a cumulative total in each county, and then an areal 
-average is taken using each counties' area as a fraction of the CWA's area. 
+high temperature, and KBDI.
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
+
+KBDI was provided by Texas A&M University on a county-by-county basis from 1995 to the present. 
 
 Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed was
 removed.
@@ -153,6 +150,9 @@ with a report, adjusted fatalities, total snowfall, maximum one and two day snow
 Snowfall may not always align with number of reports since (especially for this EWX's CWA) freezing rain/sleet/ice are
 common (relatively speaking, for winter weather) and can cause serious impacts.
 
+The large number of possibilites to select in storm data represents the large number of advisories/warnings 
+NWS forecasters can issue. For example, if impacts were seen after a Winter Weather Advisory was issued, then in storm
+data it would be tagged as Winter Storm; if it was a Winter Storm Warning that was issued then its tag would be Winter Storm.
 
 ## Rainfalls
 
