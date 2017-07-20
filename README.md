@@ -5,8 +5,6 @@ the scripts written here can be written in shorter, more efficient ways, most li
 we were needing, so the scripts did the job. This readme is divided into two sections: Information regarding the research 
 methods, various weather and climate events, etc. and a section describing a few essential lines of code utilized.
 
-
-
 Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
 
 # Background Info, Research Methods, and More
@@ -129,7 +127,9 @@ KBDI was provided by Texas A&M University on a county-by-county basis from 1995 
 average, minimum, and maximum KBDI values. For our indicator, we found the number of days each county had an average above 575 or a
 maximum above 650. The sum of all 33 counties in our CWA was used. This method only applies to summer and fall. In the winter 
 and spring, we used number of dry fronts, as these produce the large-scale winds that favor fire weather. They had to have produced 
-less than 0.1 inches of rain, on average, and there were not wetting rains of 0.5 inches in the previous five days. 
+less than 0.1 inches of rain, on average, and there were not wetting rains of 0.2 inches in the previous two days. Ideally, we use
+solely KBDI in the summer, solely frontal passages in the winter, and weight KBDI and frontal passages half and half in spring
+and fall to account for year-to-year variability in date of first and last strong frontal passage. 
 
 Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed was
 removed.
