@@ -96,7 +96,7 @@ Selections in NCEI Storm Data: Flash Flood, Flood
 
 Climatology: 1981-2010. Storm reports output from NCEI's site are only 1996 and on. To go back to 1981, we went through the NCEI
 publications (found [here](https://www.ncdc.noaa.gov/IPS/sd/sd.html)) and manually added flash flood and flood reports. In addition,
-archived E3 and E5 reports filed by past hydrologists were examined to best include all past events as possible.
+archived E-5 reports filed by past hydrologists were examined to best include all past events as possible.
 
 Combining river flooding and flash flooding may not always be applicable to every WFO. 
 
@@ -121,11 +121,15 @@ use a 15-year climatology for now.
 
 Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
 and civilian injuries), acres burned, number of fires, number of days with a fire, total seasonal rainfall, average CWA 
-high temperature, and KBDI.
+high temperature, and KBDI/number of dry fronts.
 
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
 
-KBDI was provided by Texas A&M University on a county-by-county basis from 1995 to the present. 
+KBDI was provided by Texas A&M University on a county-by-county basis from 1995 to the present. These files listed each counties'
+average, minimum, and maximum KBDI values. For our indicator, we found the number of days each county had an average above 575 or a
+maximum above 650. The sum of all 33 counties in our CWA was used. This method only applies to summer and fall. In the winter 
+and spring, we used number of dry fronts, as these produce the large-scale winds that favor fire weather. They had to have produced 
+less than 0.1 inches of rain, on average, and there were not wetting rains of 0.5 inches in the previous five days. 
 
 Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed was
 removed.
