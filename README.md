@@ -289,6 +289,11 @@ are compared to the values in the severe weather verification index. The 2015 ra
 in the verification index. The ranks of each indicator are then summed to get 75. Based on the verification index, a sum of 75 is 
 between the 6th and 7th overall ranks, meaning the year was above normal. 
 
+If the sum is wanted to be largest for above normal years and smallest for below normal years, take an absolute value of the sum 
+minus the highest score possible. In this example, there are 8 indicators and the largest rank each indicator could get is 30, 
+meaning the highest score possible is 240. Thus, Fall 2015 would have an index score of |75 - 240| which is 165. Either way, 
+you get the same result for the overall rank and tercile.
+
 # Some Code Explanations
 
 The Pandas module is a very powerful, yet easy to use, module for data analysis using tabular data. All of the data used in 
