@@ -106,11 +106,20 @@ archived E-5 reports filed by past hydrologists were examined to best include al
 
 Combining river flooding and flash flooding may not always be applicable to every WFO. 
 
-Indicators: Number of flash flood reports, number of days with a report, adjusted fatalities, total
-rainfall (discussed below), maximum one day rainfall and two day rainfall (also discussed below), and number of times river 
-gages went above moderate flood stage. 
+Indicators were broken into three categories: 
+- **Occurance**
+    - Number of reports
+    - Number of report days
+    - Number of times 52 river gages went above moderate flood stage
+- **Impacts**
+    - Total damages (adjusted to 2010 values)
+    - Fatalities/injuries blend
+- **Meteorology/Severity**
+    - Total CWA rainfall
+    - Maximum 1 day rainfall
+    - Maximum 2 day rainfall
 
-In regards to river gages, 54 were selected on major rivers and creek throughout the CWA. 
+In regards to river gages, 54 were selected on major rivers and creeks throughout the CWA. 
 
 The main flooding script will output: reports, report days, fatalities, injuries, and damages. The rainfall data is discussed below
 and the number of times river gages went above moderate was gathered by hand through AWIPS.
@@ -125,19 +134,29 @@ Climatology: 2000-2014
 The dataset obtained went back to 1982, however there were no figures for acres burned from 1982-1999. Thus, we decided to
 use a 15-year climatology for now.
 
-Indicators: Adjusted fatalities (found using combined fire service and civilian fatalities and combined fire service 
-and civilian injuries), acres burned, number of fires, number of days with a fire, total seasonal rainfall, average CWA 
-high temperature, and KBDI/number of dry fronts.
-
+Indicators were broken into three categories: 
+- **Occurance**
+    - Number of reports
+    - Number of report days
+    - Total tornado path length
+- **Impacts**
+    - Fatalities/injuries blend
+    - Total acres burned 
+- **Meteorology/Severity**
+    - Total CWA rainfall
+    - Average maximum temperature (discussed below)
+    - KBDI/Fronts (discussed below)
+    
 In our dataset times were not given for the fire reports, so number of days with a fire were strictly by date.
+
+Average maximum temperaure was calculated using the climate division method discussed below in rainfalls. 
 
 KBDI was provided by Texas A&M University on a county-by-county basis from 1995 to the present. These files listed each counties'
 average, minimum, and maximum KBDI values. For our indicator, we found the number of days each county had an average above 575 or a
-maximum above 650. The sum of all 33 counties in our CWA was used. This method only applies to summer and fall. In the winter 
-and spring, we used number of dry fronts, as these produce the large-scale winds that favor fire weather. They had to have produced 
-less than 0.1 inches of rain, on average, and there were not wetting rains of 0.2 inches in the previous two days. Ideally, we use
-solely KBDI in the summer, solely frontal passages in the winter, and weight KBDI and frontal passages half and half in spring
-and fall to account for year-to-year variability in date of first and last strong frontal passage. 
+maximum above 650. The sum of all 33 counties in our CWA was used. We used solely this number in the summer. In the spring, it 
+is weighted evenly with the number of dry fronts. In the fall it is weighted evenly with the number of strong dry fronts.
+In the winter only the number of dry fronts was used. Dry fronts are those that produced less than 0.1 inches of rain, on average, 
+and there were not wetting rains of 0.2 inches in the previous two days. 
 
 Any controlled burning or prescribed burn that did not have a fatality, injury, associated cost, or acres burned listed was
 removed.
@@ -236,7 +255,8 @@ and n being the lowest value (highest value) where n is the number of years in t
 across a single year and then this sum was ranked against all sums in the climatology to obtain a year's overall rank. This overall
 rank was 1 for the most impactful year and n for the least impactful year. 
 
-We also used Cronbach's Alpha Tests on the ranks for each indicator to test for internal consistency. 
+We also used Cronbach's Alpha Tests on the ranks for each indicator to test for internal consistency. Using this we found
+total CWA rainfall to hurt the severe weather index and damages to hurt the fire weather index.
 
 ## Predictors Stuff
 
@@ -253,6 +273,7 @@ In some cases, indicators in one season were used as a predictor for another. Fo
 is used as an indicator for spring but then also used as a predictor for summer when looking at fire weather.
 
 Spearman's Rank-Order Correlations were used to test strength of predictors with the ranks determined in the climatology.
+Multiple linear regression can then be used to get a single formula for prediction.
 
 # Some Code Explanations
 
