@@ -1,9 +1,8 @@
 This repository is a series of Jupyter notebooks that makes great use of the Pandas module
 (found [here](http://pandas.pydata.org/)) to import .csv files containing past
-storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. It should be noted that parts of
-the scripts written here can be written in shorter, more efficient ways, most likely. But, the data that was output was the data
-we were needing, so the scripts did the job. This readme is divided into two sections: Information regarding the research 
-methods, various weather and climate events, etc. and a section describing a few essential lines of code utilized.
+storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. This readme is divided into two
+sections: Information regarding the research methods, various weather and climate events, etc. and a section describing a 
+few essential lines of code utilized.
 
 Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
 
@@ -83,9 +82,18 @@ Selections in NCEI Storm Data: Hail, Lightning, Thunderstorm Wind, Tornado
 
 Climatology: 1981-2010
 
-Indicators: Total number of reports, number of report days, maximum hail size, maximum wind magnitude 
-(non tornadic), maximum tornado width, total tornado path length, total rainfall (discussed below), and adjusted fatalities. 
-
+Indicators were broken into three categories: 
+- **Occurance**
+    - Number of reports
+    - Number of report days
+    - Total tornado path length
+- **Impacts**
+    - Total damages (adjusted to 2010 values)
+    - Fatalities/injuries blend
+- **Meteorology/Severity**
+    - Maximum hail size
+    - Maximum non-tornadic wind magnitude
+    - Maximum tornado width
 
 
 ## River/ Flash Flooding
