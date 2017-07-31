@@ -282,8 +282,12 @@ Multiple linear regression can then be used to get a single formula for predicti
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **2015** | 19 | 6 | 0 | 18.6 mi. | $2.07M | 1.0 in. | 71 mph | 440 yd. |
 | **Rank** | 9th | 9th | 20th | 3rd | 6th | 20th | 5th | 3rd | 
-| **Value (year)** | 18 (1997) | 6 (3 times) | 0   (21 times) | 26 mi. (1988) | $1.75M (2000) | 1.0 in. (1994) | 70 mph (3 times) | 400 yd. (2004) | 
+| **Value (year)** | 18 (1997) | 6 (3 times) | 0 (21 times) | 26 mi. (1988) | $1.75M (2000) | 1.0 in. (1994) | 70 mph (3 times) | 400 yd. (2004) | 
 
+As an example, I am showing a verification for the outlook done for Fall 2015 for severe weather. The 2015 values for each indicator 
+are compared to the values in the severe weather verification index. The 2015 rank assigned is based on the rank of the closest value
+in the verification index. The ranks of each indicator are then summed to get 75. Based on the verification index, a sum of 75 is 
+between the 6th and 7th overall ranks, meaning the year was above normal. 
 
 # Some Code Explanations
 
