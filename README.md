@@ -278,7 +278,7 @@ Multiple linear regression can then be used to get a single formula for predicti
 
 # Verification
 
-| Fall Severe Weather | Reports | Report Days | Fatalities/Injuries | Tornado Track | Damages | Largest Hail | Highest Wind | Widest Tornado |
+| Fall Severe Weather | Reports | Report Days | Fatalities Blend | Tornado Track | Damages | Largest Hail | Highest Wind | Widest Tornado |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **2015** | 19 | 6 | 0 | 18.6 mi. | $2.07M | 1.0 in. | 71 mph | 440 yd. |
 | **Rank** | 9th | 9th | 20th | 3rd | 6th | 20th | 5th | 3rd | 
