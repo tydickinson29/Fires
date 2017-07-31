@@ -1,8 +1,8 @@
 This repository is a series of Jupyter notebooks that makes great use of the Pandas module
 (found [here](http://pandas.pydata.org/)) to import .csv files containing past
-storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. This readme is divided into two
-sections: Information regarding the research methods, various weather and climate events, etc. and a section describing a 
-few essential lines of code utilized.
+storm/fire reports, rainfall, etc and outputs new .csv containing various data described below. This readme is divided into three
+sections: Information regarding the research methods, various weather and climate events, etc., Verification, and a section 
+describing a few essential lines of code utilized.
 
 Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
 
@@ -275,6 +275,15 @@ is used as an indicator for spring but then also used as a predictor for summer 
 
 Spearman's Rank-Order Correlations were used to test strength of predictors with the ranks determined in the climatology.
 Multiple linear regression can then be used to get a single formula for prediction.
+
+# Verification
+
+| Fall Severe Weather | Reports | Report Days | Fatalities/Injuries | Tornado Track | Damages | Largest Hail | Highest Wind | Widest Tornado |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **2015** | 19 | 6 | 0 | 18.6 mi. | $2.07M | 1.0 in. | 71 mph | 440 yd. |
+| **Rank** | 9th | 9th | 20th | 3rd | 6th | 20th | 5th | 3rd | 
+| **Value (year)** | 18 (1997) | 6 (3 times) | 0 (21 times) | 26 mi. (1988) | $1.75M (2000) | 1.0 in. (1994) | 70 mph (3 times) | 400 yd. (2004) | 
+
 
 # Some Code Explanations
 
