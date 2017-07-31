@@ -62,19 +62,20 @@ is the number of years in the climatology and where 1 is the highest value. For 
 break the tie (i.e. in years where the recorded fatality is kept, the number of injuries is used to break the tie). If ties
 still exist, break them as one normally would by adding the ranks in question and dividing by the number of years in the tie.
 Here is a basic example: 
-```
-Adjusted Fatalities             Injuries                Rank
-2                               10                      1
-2                               5                       2
-1                               6                       3.5
-1                               6                       3.5
-1                               0                       5
-.06                             6                       6
-.05                             5                       7
-.04                             4                       8
-0                               0                       9.5
-0                               0                       9.5
-```
+
+| Adjusted Fatalities | Injuries | Rank |
+| --- | --- | --- |
+| 2 | 10 | 1 |
+| 2 | 5 | 2 |
+| 1 | 6 | 3.5 |
+| 1 | 6 | 3.5 |
+| 1 | 0 | 5 |
+| .06 | 6 | 6 |
+| .05 | 5 | 7 |
+| .04 | 4 | 8 |
+| 0 | 0 | 9.5 |
+| 0 | 0 | 9.5 |
+
 
 ## Severe Weather
 
