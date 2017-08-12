@@ -96,6 +96,8 @@ Indicators were broken into three categories:
     - Maximum non-tornadic wind magnitude
     - Maximum tornado width
 
+SPC data such as outlooks is planned to be used when looking at a large area as it is predicted that the outlooks will have 
+greater weight as an indicator when looking at a region as opposed to a single CWA.
 
 ## River/ Flash Flooding
 
@@ -164,23 +166,31 @@ removed.
 
 
 ## Winter Weather 
-
-Seasons may be changed to October, November, December and January, February, March. 
-
 Climatology: 1981-2010. Storm reports output from NCEI's site are only 1996 and on. To go back to 1981, we went through the NCEI
 publications (found [here](https://www.ncdc.noaa.gov/IPS/sd/sd.html)) and manually added appropriate reports.
 
 For our CWA, all reports were considered as one large season (essentially November through March) since there is not a large 
-number of total reports. 
+number of total reports. Northern WFO's should take a look at climatology of winter weather and develop appropriate seasons.
 
 Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/Wind Chill, Frost/Freeze, Heavy Snow, 
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
 
-Possible indicators: Number of total reports (large amount of possibilities in NCEI Storm Database seen above), number of days 
-with a report, adjusted fatalities, total snowfall, maximum one and two day snowfall.
+Indicators were broken into three categories (developed with talks with WFO Detroit): 
+- **Occurance**
+    - Number of reports
+    - Number of report days
+- **Impacts**
+    - Total damages (adjusted to 2010 values)
+    - Fatalities/injuries blend
+    - Total number of power outages 
+- **Meteorology/Severity**
+    - Maximum 1 day snowfall
+    - Maximum 2 day snowfall
+    - Average maximum/minimum temperature 
+    - Lowest recorded temperature/wind chil
 
 Snowfall may not always align with number of reports since (especially for this EWX's CWA) freezing rain/sleet/ice are
-common (relatively speaking, for winter weather) and can cause serious impacts.
+common (relatively speaking, for winter weather) and can cause serious impacts. WFO EWX used number of days below freezing.
 
 The large number of possibilites to select in storm data represents the large number of advisories/warnings 
 NWS forecasters can issue. For example, if impacts were seen after a Winter Weather Advisory was issued, then in storm
