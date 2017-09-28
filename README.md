@@ -40,6 +40,10 @@ Summer: June, July, August
 
 Fall: September, October, November
 
+During the summer of 2017, we used these fixed season boundaries. We then moved to using rolling three month 
+timeframes beginning in the fall. The severe weather script utilizes fixed seasons whereas rolling three month
+severe weather accounts for all 12 consecutive three month periods.
+
 Storm reports (except Fire Weather) were gathered using the National Centers for Environmental Information's (NCEI) 
 [Storm Events Database](https://www.ncdc.noaa.gov/stormevents/).
 
