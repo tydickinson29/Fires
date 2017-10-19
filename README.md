@@ -173,9 +173,6 @@ removed.
 Climatology: 1981-2010. Storm reports output from NCEI's site are only 1996 and on. To go back to 1981, we went through the NCEI
 publications (found [here](https://www.ncdc.noaa.gov/IPS/sd/sd.html)) and manually added appropriate reports.
 
-For our CWA, all reports were considered as one large season (essentially November through March) since there is not a large 
-number of total reports. Northern WFO's should take a look at climatology of winter weather and develop appropriate seasons.
-
 Possible selections in NCEI Storm Data: Blizzard, Cold/Wind Chill, Extreme Cold/Wind Chill, Frost/Freeze, Heavy Snow, 
 Lake-Effect Snow, Sleet, Winter Storm, Winter Weather
 
@@ -273,22 +270,21 @@ rank was 1 for the most impactful year and n for the least impactful year.
 We also used Cronbach's Alpha Tests on the ranks for each indicator to test for internal consistency. Using this we found
 total CWA rainfall to hurt the severe weather index and damages to hurt the fire weather index.
 
+It is hoped moving forward that a cumulative distribution curve can be made to better capture the natural breaks
+in the distribution, allowing for more accurate verification as opposed to simply having the top 10 sums be above
+normal, the middle 10 be near normal, and the bottom 10 be below normal.
+
 ## Predictors Stuff
 
-We used the Oceanic Niño Index as a measure of ENSO. These values can be found at the 
-[Climate Prediction Center's page on ONI](http://www.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ensoyears.shtml).
-
-CPC Seasonal Outlooks were also utilized, and can be found [here](ftp://ftp.cpc.ncep.noaa.gov/cpcfcsts/archives/long_lead/data/).
-A station's list is available [here](http://old.wetterzentrale.de/klima/stnlst.html). Note that the CPC only uses official
-WMO stations. These stations have a station number whose seventh digit is 0 in the station link list. Stations that end in 
-something other than a 0 denote that they are near a WMO site and are other sites like ASOS or COOP. The stations used 
-for our CWA were San Antonio International Airport, Austin Mueller Municipal Airport, and Del Rio International Airport.
+We are in the process now of attempting to make objective forecasting techniques. Some of the predictors include SSTs like
+the Nino 1+2, Nino 3.4, and Tropical North Atlantic regions while others are climate modes such as the PDO and PNA.
 
 In some cases, indicators in one season were used as a predictor for another. For example, total CWA rainfall in spring 
 is used as an indicator for spring but then also used as a predictor for summer when looking at fire weather.
 
-Spearman's Rank-Order Correlations were used to test strength of predictors with the ranks determined in the climatology.
-Multiple linear regression can then be used to get a single formula for prediction.
+Pearson's Correlation Coefficient is used to test strength of a single predictor and the sums determined in the climatology.
+Multiple linear regression can then be used to get a single formula for prediction. Where we initially test all predictors 
+and then remove predictors that are not statistically significant at the 95% confidence level. 
 
 # Verification
 
@@ -330,17 +326,17 @@ recognize the format of the date (and time, if it is in the same column) regardl
 ## Separating the Entire Table into Seasons
 ```
 df = Table.set_index(['BEGIN_DATE'])
-Date1 = '12-01-1980'
-Date2 = '02-28-1981'
-Date1 = pd.to_datetime(Date1)
-Date2 = pd.to_datetime(Date2)
+Date1 = pd.to_datetime('12-01-1980')
+Date2 = pd.to_datetime('02-28-1981')
 x = df.loc[Date1:Date2]
 ```
 
 By default, when tabular data is read into the program, it in indexed from 0 to n-1, where n is the number of rows in the original
 file. The first line above sets the index to instead be the BEGIN_DATE column. This allows me to use the .loc function. Dates 1 
 and 2 are defined and converted to a datetime format to be used in the .loc. The last line sets the variable x to be the portion
-of the file that is between those two dates (both dates are included). 
+of the file that is between those two dates (both dates are included). .loc is a function that separates the entire text file
+into only the portion that falls on and between the two days; I then set the variable x as that new table describing reports in
+December, January, and February for the winter of 1981, for example.
 
 ## Running the Script Through Seasons for Several Years
 ```
