@@ -5,6 +5,7 @@ sections: Information regarding the research methods, various weather and climat
 describing a few essential lines of code utilized.
 
 Any questions or concerns can be directed to me at either ty.dickinson@noaa.gov or Ty.Dickinson@ou.edu
+
 Additional collaborators in the creation of this code: Brian Tomiuk, Justin Stipe, and Larry Hopper.
 
 # Background Info, Research Methods, and More
